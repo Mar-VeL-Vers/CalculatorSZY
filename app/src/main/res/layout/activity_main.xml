@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:background="@color/cardview_dark_background"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:gravity="end|bottom"
+        android:padding="10dp"
+        android:shadowColor="#CDDC39"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:backgroundTintMode="add"
+                android:onClick="canAdDiggitforNeg"
+                android:text="@string/_7"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:strokeColor="#8BC34A"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="canAdDiggitforNeg"
+                android:text="@string/_8"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="canAdDiggitforNeg"
+                android:text="@string/_9"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="addDivisionSign"
+                android:text="@string/divide"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:strokeColor="#CDDC39"
+                app:strokeWidth="2dp"
+                tools:ignore="UsingOnClickInXml" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="canAdDiggitforNeg"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="canAdDiggitforNeg"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="canAdDiggitforNeg"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="addMultiplySign"
+                android:text="*"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:strokeColor="#CDDC39"
+                app:strokeWidth="2dp"
+                tools:ignore="UsingOnClickInXml" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="canAdDiggitforNeg"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="canAdDiggitforNeg"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="canAdDiggitforNeg"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnMinus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="addMinusSign"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:strokeColor="#CDDC39"
+                app:strokeWidth="2dp"
+                tools:ignore="UsingOnClickInXml" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="canAdDiggitforNeg"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnPoint"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="addPoint"
+                android:text="."
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnPercent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="calculatePercent"
+                android:text="%"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnPlus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="addPlusSign"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:strokeColor="#CDDC39"
+                app:strokeWidth="2dp"
+                tools:ignore="UsingOnClickInXml" />
+        </TableRow>
+
+        <TableRow>
+
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="onClear"
+                android:text="CLR"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:strokeColor="#CDDC39"
+                app:strokeWidth="2dp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnPlusMinus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="calculateAbsolute"
+                android:text="|x|"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:strokeColor="#CDDC39"
+                app:strokeWidth="2dp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnDel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="backSpaceAction"
+                android:text="DEL"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:strokeColor="#CDDC39"
+                app:strokeWidth="2dp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnEgal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="equalsAction"
+                android:text="="
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:strokeColor="#CDDC39"
+                app:strokeWidth="2dp"
+                tools:ignore="UsingOnClickInXml" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnUnu_mic_Sus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:onClick="unupeX"
+                android:text="@string/unu_mic_sus"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnRadical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="calculateSquareRoot"
+                android:text="@string/radical"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnCube_root"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="calculateCubeRoot"
+                android:text="@string/cube_root"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnNradicalX"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="nRootX"
+                android:text="@string/NradicalX"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <Button
+                android:id="@+id/btnX_patrat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="xPatrat"
+                android:text="@string/x_patrat"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnX_cube"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="xpowY"
+                android:text="@string/x_la_y"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnX_la_Y"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="doiLaX"
+                android:text="@string/doi_la_x"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnZece_la_X"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="zeceLaX"
+                android:text="@string/zece_la_x"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnXFactorial"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="calculateFactorial"
+                android:text="x!"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnPi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="addPiNumber"
+                android:text="@string/Pi"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnEuler"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="addEuler"
+                android:text="@string/Euler"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btEulerLaX"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="eulerLaX"
+                android:text="@string/EulerLaX"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnLogaritmNatural"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="naturalLogE"
+                android:text="ln"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnLogaritmBazaDoi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="dualLog2"
+                android:text="log₂"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLogaritmBazaZece1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="zecimalLog10"
+                android:text="log₁₀"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btnLogaritmBazaX"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:onClick="logXbaseY"
+                android:text="@string/LogaritmBazaX"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                tools:ignore="UsingOnClickInXml" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnTrigonometric"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:text="trigonometric"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                tools:ignore="UsingOnClickInXml" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

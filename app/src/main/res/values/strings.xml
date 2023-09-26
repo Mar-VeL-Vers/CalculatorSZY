@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">CalculatorSZY</string>
+    <string name="calc_text">1234567</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="divide">/</string>
+    <string name="radical">\u221A\u2093</string>
+    <string name="plus_minus">\u00B1</string>
+    <string name="unu_mic_sus">\u00B9\u002F\u2093</string>
+    <string name="cube_root">\u221B\u2093</string>
+    <string name="doi_la_x">2\u02E3</string>
+    <string name="zece_la_x">10\u02E3</string>
+    <string name="x_patrat">x\u00B2</string>
+    <string name="x_cube">x\u00B3</string>
+    <string name="x_la_y">x\u02B8</string>
+    <string name="y_la_x">y\u02E3</string>
+    <string name="Cerc">\u25EF</string>
+    <string name="Patrat">\u25A1</string>
+    <string name="Triunghi">\u25B3</string>
+    <string name="Pi">\u03C0</string>
+    <string name="EulerLaX">\u0065\u02E3</string>
+    <string name="Euler">\u0065</string>
+    <string name="NradicalX">ⁿ\u221A\u2093</string>
+    <string name="LogaritmBazaX">log\ᵧ\x</string>
+    <string name="Theta">\u03F4\u207B\¹</string>
+
+
+
+</resources>

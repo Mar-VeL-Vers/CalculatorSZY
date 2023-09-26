@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/History"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_info2"
+        android:title="History"
+        >
+
+    </item>
+    <item
+        android:id="@+id/CloseApp1"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_close2"
+        android:title="close"
+        >
+
+    </item>
+
+
+
+</menu>
